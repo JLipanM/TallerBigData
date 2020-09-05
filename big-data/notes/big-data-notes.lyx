@@ -1,0 +1,725 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage[T1]{fontenc}
+\usepackage{ae,aecompl}
+
+
+% remove spacing around date:
+\usepackage{titling}
+\predate{}
+\postdate{}
+
+\date{} % clear date
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish-mexico
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Big Data
+\end_layout
+
+\begin_layout Author
+Profesor Carlos Cosming
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+me@ccosming.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+¿Qué es Big Data?
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Big Data
+\series default
+ puede definirse como el conjunto de 
+\series bold
+nuevas tecnologías y arquitecturas
+\series default
+ diseñadas para la obtención de 
+\series bold
+valor
+\series default
+ de 
+\series bold
+grandes volúmenes
+\series default
+ y 
+\series bold
+variedad
+\series default
+ de datos de una forma rápida, facilitando su 
+\series bold
+captura, procesamiento y análisis
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/bigdata_5vs.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Volumen:
+\series default
+ Es quizás la característica más asociada al concepto de Big Data.
+ Son Terabytes, Exabytes de datos a procesar.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Velocidad:
+\series default
+ De la misma manera, todos estos datos son generados de manera continua
+ e instantánea.
+ Esto supone que los datos 
+\series bold
+tengan ciclos de vida cortos
+\series default
+, haciendo obsoletos los datos que instantes antes eran válidos.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Variedad:
+\series default
+ Estas enormes cantidades de datos son diversos en cuanto a tipología y
+ fuentes de obtención.
+ Esta diversidad es clave para la riqueza de posibilidades del Big Data.
+ Pero a la vez aumenta el grado complejidad tanto en su almacenamiento como
+ en su procesamiento y análisis.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Veracidad:
+\series default
+ La veracidad puede entenderse como el grado de confianza que se establece
+ sobre los datos a utilizar, esta coponente determinará la calidad de los
+ resultados y la confianza en los mismos.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Valor:
+\series default
+ Fin último del análisis de datos Big Data.
+ Supone el conocimiento e información útil que se puede extraer de estos.
+\end_layout
+
+\begin_layout Section
+Ecosistema Hadoop
+\end_layout
+
+\begin_layout Subsection
+¿Qué es exactamente Hadoop? 
+\end_layout
+
+\begin_layout Standard
+Hadoop es un conjunto de programas y procedimientos de código abierto que
+ cualquiera puede usar como la “columna vertebral” de sus operaciones de
+ Big Data.
+\end_layout
+
+\begin_layout Subsection
+Historia
+\end_layout
+
+\begin_layout Standard
+A medida que la World Wide Web creció a principios de este siglo, los motores
+ de búsqueda y los índices fueron creados para ayudar a localizar información
+ relevante.
+\end_layout
+
+\begin_layout Standard
+A medida que la web fue creciendo, se fue necesitando automatización.
+ Entonces se crearon rastreadores web, algunos como proyectos de investigación
+ dirigidos por algunas universidades y arrancaron los motores de búsqueda
+ como: Yahoo, AltaVista, etc.
+\end_layout
+
+\begin_layout Standard
+Uno de esos proyectos fue un motor de búsqueda web de código abierto llamado
+ 
+\series bold
+Nutch
+\series default
+, creación de 
+\series bold
+Doug Cutting y Mike Cafarella
+\series default
+.
+ Ellos pretendían devolver resultados de búsqueda web más rápido distribuyendo
+ datos y cálculos entre diferentes computadoras para que se pudieran realizar
+ múltiples tareas simultáneamente.
+ Durante este tiempo, otro proyecto de motor de búsqueda llamado Google
+ estaba en progreso.
+ Se basaba en el mismo concepto: almacenar y procesar datos de forma distribuida
+ y automatizada para que los resultados de búsqueda web relevantes pudieran
+ devolverse más rápidamente.
+\end_layout
+
+\begin_layout Standard
+Para el año 2006, Cutting decidió unirse a Yahoo y se llevó consigo el proyecto
+ Nutch, así como ideas basadas en los primeros trabajos de Google con la
+ automatización del almacenamiento y procesamiento de datos distribuidos.
+\end_layout
+
+\begin_layout Standard
+El proyecto de Nutch se dividió: la parte del rastreador web permaneció
+ como Nutch y la porción de procesamiento y computación distribuida se convirtió
+ en 
+\series bold
+Hadoop
+\series default
+ (que lleva el nombre del elefante de juguete del hijo de Cutting).
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/hadoop_logo.png
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En 2008, Yahoo lanzó al mundo Hadoop como un proyecto de código abierto.
+ En la actualidad, 
+\series bold
+Apache Software Foundation (ASF)
+\series default
+, una comunidad global de desarrolladores de software y colaboradores, 
+\series bold
+gestiona y mantiene el marco y el ecosistema 
+\series default
+de tecnologías de Hadoop.
+\end_layout
+
+\begin_layout Subsection
+¿Qué lo hace especial?
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Capacidad para almacenar y procesar cantidades grandes de cualquier tipo
+ de datos, y además de forma rápida:
+\series default
+ Con volúmenes y variedades de datos en constante aumento, especialmente
+ desde las redes sociales y el Internet de las cosas (IoT), esa es una considera
+ción clave.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Cuenta con poder computacional:
+\series default
+ El modelo de computación distribuida de Hadoop es capaz de procesar grandes
+ cantidades de datos rápidamente.
+ Cuantos más nodos de computación use, más poder de procesamiento tendrá.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tolerante a fallos:
+\series default
+ El procesamiento de aplicaciones y datos está protegido contra fallas del
+ hardware.
+ Si un nodo se cae, los trabajos se redirigen de forma automática a otros
+ nodos para asegurarse de que la informática distribuida no falle.
+ Varias copias de todos los datos se almacenan automáticamente.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Es muy Flexible: 
+\series default
+A diferencia de las bases de datos tradicionales, no es necesario procesar
+ previamente los datos antes de almacenarlos.
+ Puede almacenar tantos datos como usted guste y decidir cómo usarlos más
+ adelante.
+ Eso incluye datos no estructurados como imágenes, textos o vídeos.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Es de bajo costo:
+\series default
+ El marco de código abierto es totalmente gratuito y utiliza hardware básico
+ para almacenar grandes cantidades de datos.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Es escalable: 
+\series default
+Puede hacer crecer fácilmente su sistema para manejar más datos simplemente
+ agregando nodos.
+ Se requiere poca administración.
+\end_layout
+
+\begin_layout Subsection
+Arquitectura
+\end_layout
+
+\begin_layout Standard
+Hadoop incluye los siguientes módulos:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Hadoop Common:
+\series default
+ Utilidades comunes en las que se apoyan los otros módulos.
+ Proporciona abstracciones a nivel de sistema de archivos o sistema operativo.
+ Contiene los archivos .jar (Java ARchive) y scripts necesarios para iniciar
+ Hadoop.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Hadoop Distributed File System (HDFS):
+\series default
+ Sistema de archivos distribuido que proporciona acceso de alto rendimiento
+ a datos.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Hadoop YARN (Yet Another Resource Negociator):
+\series default
+ Marco de trabajo para la planificación de tareas y gestión de recursos
+ de clúster.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Hadoop MapReduce:
+\series default
+ Sistema basado en YARN para el procesamiento en paralelo de grandes conjuntos
+ de datos.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/hadoop_eco.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hadoop debe correr en varias máquinas conectadas entre sí que almacenan
+ grandes archivos de datos.
+ Así, los sistemas de archivos deben proporcionar su ubicación (la del rack
+ y, principalmente, la del switch) donde se encuentra un nodo 
+\series bold
+esclavo o trabajador
+\series default
+.
+ Las aplicaciones Hadoop pueden utilizar esta información para ejecutar
+ trabajo en el nodo donde se encuentran los datos reduciendo el tráfico
+ de red.
+ El HDFS replica los datos para tratar de mantener diferentes copias en
+ diferentes racks aumentando la tolerancia a fallos.
+\end_layout
+
+\begin_layout Standard
+En los nodos esclavos se se compoenen por un 
+\series bold
+TaskTracker
+\series default
+ (rastreador de tareas) y un 
+\series bold
+DataNode
+\series default
+ (nodo de datos).
+ Mientras que en el maestro encontramos un 
+\series bold
+JobTracker
+\series default
+ (rastreador de trabajos) y un 
+\series bold
+NameNode
+\series default
+ (nodo de nombres).
+\end_layout
+
+\begin_layout Standard
+En los clústers de Hadoop encontramos un solo NameNode (con opciones de
+ redundacia por su criticidad) y un grupo de DataNodes, que sirven bloques
+ de datos.
+ Consigue fiabilidad mediante la 
+\series bold
+réplica de datos
+\series default
+ a través de múltiples hosts.
+ Los nodos de datos pueden hablar entre sí para 
+\series bold
+balancear
+\series default
+ los datos, mover copias y mantener una réplica alta de datos.
+\end_layout
+
+\begin_layout Subsection
+HDFS y MapReduce
+\end_layout
+
+\begin_layout Standard
+El HDFS se gestiona a través de un servidor 
+\series bold
+NameNode
+\series default
+ dedicado para alojar el índice de sistema de archivos secundario destinado
+ a generar instantáneas de estructuras de memoria del NameNode principal.
+ De esta manera, se evita la corrupción del sistema de archivos y la reducción
+ de pérdida de datos.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/hadoop_hdfs.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por otro lado, existe comunicación entre JobTracker y TaskTracker de manera
+ que el primero establece un map o un reduce al segundo como tarea mediante
+ el conocimiento de la ubicación de los datos.
+ Esta funcionalidad se le conoce como MapReduce.
+ 
+\end_layout
+
+\begin_layout Standard
+El JobTracker envía las tareas a los nodos TaskTracker intentando mantener
+ el trabajo tan cerca de los nodos como sea posible.
+ El JobTracker conoce en todo momento qué nodos contienen información y
+ cuáles están cerca,
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/hadoop_mr.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Creación de un entorno local de Hadoop
+\end_layout
+
+\begin_layout Standard
+Para efectos de este setup se requieren las siguientes herramientas:
+\end_layout
+
+\begin_layout Itemize
+Docker.
+\end_layout
+
+\begin_layout Itemize
+Command Shell (Windows/Linux).
+\end_layout
+
+\begin_layout Itemize
+Git.
+\end_layout
+
+\begin_layout Itemize
+Editor de textos (VS Code por ejemplo).
+\end_layout
+
+\begin_layout Subsection
+Topología del cluster
+\end_layout
+
+\begin_layout Standard
+Se creará un cluster Hadoop con 2 nodos esclavos.
+ Para ello se crearán dos imágenes Docker.
+ La primera imagen la llamaremos 
+\series bold
+base
+\series default
+ pues será común tanto para el nodo maestro como nodo esclavo, la cual será
+ una instancia de Hadoop.
+ La segunda imagen será para el nodo maestro que heredará la imagen base,
+ pero que se le irán activando funcionalidades en el futuro.
+\end_layout
+
+\begin_layout Subsection
+Creación imágenes Docker
+\end_layout
+
+\begin_layout Subsection
+Archivos de configuración
+\end_layout
+
+\begin_layout Subsection
+Script de ejecución
+\end_layout
+
+\begin_layout Section
+Hive
+\end_layout
+
+\begin_layout Subsection
+Introducción
+\end_layout
+
+\begin_layout Standard
+Es una infraestructura que se basa en el data warehousing para Hadoop.
+ Este sistema cuenta con tres formatos diferentes para la organización de
+ los datos: las tablas, las particiones y los cubos.
+ 
+\end_layout
+
+\begin_layout Itemize
+Tablas: Las tablas de Hive son muy parecidas a las RDBMS clásicas que presentan
+ tablas y filas.
+ El procedimiento para trabajar con estas tablas es muy sencillo.
+ Lo que hacemos es asignar cada una de estas tablas a los directorios que
+ contienen los sistemas de archivos, un proceso que se lleva a cabo de forma
+ directa.
+ Así mismo, es importante destacar que las tablas de Hive también son compatible
+s con otros sistemas que tienen archivos nativos (además de HDFS).
+\end_layout
+
+\begin_layout Itemize
+Particiones: Las particiones se realizan en las propias tablas, sabiendo
+ que las tablas Hive pueden tener más de un fraccionamiento.
+ Si antes hablábamos de directorios, en esta ocasión también hacemos referencia
+ a las tablas que se asignan a subdirectorios y los sistemas que contienen
+ archivos.
+\end_layout
+
+\begin_layout Itemize
+Cubos: En el sistema Hive los datos que se almacenan también se pueden dividir
+ en cubos.
+ Es decir, esta información se guarda como si fuera un archivo dentro de
+ la partición correspondiente y siempre en un sistema de archivos inferior.
+\end_layout
+
+\begin_layout Subsection
+HiveSQL
+\end_layout
+
+\begin_layout Subsection
+Configuración Hive
+\end_layout
+
+\begin_layout Subsection
+Operaciones comunes con Hive
+\end_layout
+
+\begin_layout Section
+Apache Spark
+\end_layout
+
+\begin_layout Subsection
+Introducción
+\end_layout
+
+\begin_layout Subsection
+Diferencias con MapReduce
+\end_layout
+
+\begin_layout Subsection
+Configuración de Apache Spark
+\end_layout
+
+\begin_layout Subsection
+Introducción al lenguaje Scala
+\end_layout
+
+\begin_layout Subsection
+Ejemplos prácticos
+\end_layout
+
+\begin_layout Section
+Referencias
+\end_layout
+
+\begin_layout Itemize
+Hadoop: The Definitive Guide, Fourth Edition by Tom White.
+ 2009.
+\end_layout
+
+\begin_layout Itemize
+Docker: Up & Running, 2nd Edition.
+ by Sean P.
+ Kane, Karl Matthias.
+ 2018.
+\end_layout
+
+\begin_layout Itemize
+Programming Hive.
+ O'Reilly Media, Inc.
+ 2012.
+\end_layout
+
+\begin_layout Itemize
+Spark: The Definitive Guide.
+ by Bill Chambers, Matei Zaharia.
+ 2018.
+\end_layout
+
+\end_body
+\end_document
